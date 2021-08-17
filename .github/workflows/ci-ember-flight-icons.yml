@@ -32,16 +32,16 @@ name: CI - Ember Flight Icons
 
 defaults:
   run:
-    working-directory: ember-flight-icons
+    working-directory: flight-icons-ember
 on:
   push:
     branches:
       - main
     paths:
-      - 'ember-flight-icons/**'
+      - 'flight-icons-ember/**'
   pull_request:
     paths:
-      - 'ember-flight-icons/**'
+      - 'flight-icons-ember/**'
 env:
   NODE_VERSION: '10.x'
 
@@ -67,8 +67,8 @@ jobs:
       uses: actions/cache@v2
       with:
         path: |
-          ember-flight-icons${{ steps.global-cache-dir-path.outputs.dir }}
-          ember-flight-icons/node_modules
+          flight-icons-ember${{ steps.global-cache-dir-path.outputs.dir }}
+          flight-icons-ember/node_modules
         key: ${{ runner.os }}-${{ matrix.node-version }}-${{
           hashFiles('**/yarn.lock'
           ) }}
@@ -112,8 +112,8 @@ jobs:
       uses: actions/cache@v2
       with:
         path: |
-          ember-flight-icons${{ steps.global-cache-dir-path.outputs.dir }}
-          ember-flight-icons/node_modules
+          flight-icons-ember${{ steps.global-cache-dir-path.outputs.dir }}
+          flight-icons-ember/node_modules
         key: ${{ runner.os }}-${{ matrix.node-version }}-${{
           hashFiles('**/yarn.lock'
           ) }}
@@ -157,8 +157,8 @@ jobs:
       uses: actions/cache@v2
       with:
         path: |
-          ember-flight-icons${{ steps.global-cache-dir-path.outputs.dir }}
-          ember-flight-icons/node_modules
+          flight-icons-ember${{ steps.global-cache-dir-path.outputs.dir }}
+          flight-icons-ember/node_modules
         key: ${{ runner.os }}-${{ matrix.node-version }}-${{
           hashFiles('**/yarn.lock'
           ) }}
@@ -211,8 +211,8 @@ jobs:
       uses: actions/cache@v2
       with:
         path: |
-          ember-flight-icons${{ steps.global-cache-dir-path.outputs.dir }}
-          ember-flight-icons/node_modules
+          flight-icons-ember${{ steps.global-cache-dir-path.outputs.dir }}
+          flight-icons-ember/node_modules
         key: ${{ runner.os }}-${{ matrix.node-version }}-${{
           hashFiles('**/yarn.lock'
           ) }}

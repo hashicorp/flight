@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-flight-icons`
+* `cd flight-icons-ember`
 * `yarn install`
 
 ## Linting
@@ -26,29 +26,29 @@ For more information on using ember-cli, visit [https://ember-cli.com/](https://
 
 ## Test locally with another repository
 
-* `cd flight/ember-flight-icons` (this directory)
+* `cd flight/flight-icons-ember` (this directory)
 * Run `yarn link`. You'll get a response such as:
 
 ```
-success Registered "@hashicorp/ember-flight-icons".
-info You can now run `yarn link "@hashicorp/ember-flight-icons"` in the projects where you want to use this package and it will be used instead.
+success Registered "@hashicorp/flight-icons-ember".
+info You can now run `yarn link "@hashicorp/flight-icons-ember"` in the projects where you want to use this package and it will be used instead.
 ✨  Done in 0.06s.
 ```
 
 If necessary, run a `yarn unlink`.
 
-* In your external repo, e.g. https://github.com/hashicorp/design-system-playground-fastboot, run `yarn link "@hashicorp/ember-flight-icons"`
+* In your external repo, e.g. https://github.com/hashicorp/design-system-playground-fastboot, run `yarn link "@hashicorp/flight-icons-ember"`
 * In your external repo, manually add the path to the `package.json`. For example:
 
 ```json
 "devDependencies": {
-  "@hashicorp/ember-flight-icons": "link:~/your-path-here/flight/ember-flight-icons",
+  "@hashicorp/flight-icons-ember": "link:~/your-path-here/flight/flight-icons-ember",
 }
 ```
 
 * Run `yarn` or `yarn install`
-* You may need to copy code such as https://github.com/hashicorp/flight/blob/main/ember-flight-icons/tests/dummy/app/templates/application.hbs into the external app's `application.hbs` to see the results.
-* If you want to test local changes to `ember-flight-icons`, add `isDevelopingAddon` to `ember-flight-icons/index.js`. The file will look something like the following:
+* You may need to copy code such as https://github.com/hashicorp/flight/blob/main/flight-icons-ember/tests/dummy/app/templates/application.hbs into the external app's `application.hbs` to see the results.
+* If you want to test local changes to `flight-icons-ember`, add `isDevelopingAddon` to `flight-icons-ember/index.js`. The file will look something like the following:
 
 ```js
 'use strict';

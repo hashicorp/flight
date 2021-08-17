@@ -1,4 +1,4 @@
-# ember-flight-icons
+# flight-icons-ember
 
 An Ember addon for the icons from `flight`. Currently in development.
 
@@ -20,7 +20,7 @@ Goals:
 This package has not yet been published. Once it has, you can install it like any other Ember addon:
 
 ```bash
-ember install @hashicorp/ember-flight-icons
+ember install @hashicorp/flight-icons-ember
 ```
 
 ## Usage

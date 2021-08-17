@@ -1,11 +1,11 @@
 {
-  "name": "@hashicorp/ember-flight-icons",
+  "name": "@hashicorp/flight-icons-ember",
   "version": "0.0.1-beta",
   "description": "The Ember addon for the HashiCorp icon set",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "https://github.com/hashicorp/flight/ember-flight-icons",
+  "repository": "https://github.com/hashicorp/flight/flight-icons-ember",
   "license": "MPL-2.0",
   "author": "HashiCorp Design Systems <design-systems@hashicorp.com>",
   "contributors": [
