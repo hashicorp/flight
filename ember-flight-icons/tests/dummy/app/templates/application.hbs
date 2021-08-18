@@ -16,7 +16,9 @@
 
 We are here:
 {{#each @model as |meta|}}
-  {{!-- {{log meta.Name}} --}}
+  {{!-- {{log meta}} --}}
+  {{!-- this logic but put in js or helper so can access here --}}
+  {{!-- {{log meta.Name.replace(regSize, '')}} --}}
   {{!-- returns `volume-24` we want volume ... we want some regex that removes the "-##"" --}}
   {{!-- ^(.+?)24(.+?)$  --}}
   <FlightIcon @name={{meta.Name}} />

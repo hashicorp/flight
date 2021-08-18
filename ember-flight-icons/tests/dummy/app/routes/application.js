@@ -2,6 +2,10 @@ import Route from '@ember/routing/route';
 import fetch from 'fetch';
 import { getOwner } from '@ember/application';
 
+// let iconName = meta.Name.replace(regSize, '');
+// {{log iconName}}
+const regSize = new RegExp(/^(.+?)24(.+?)$/);
+
 export default class ApplicationRoute extends Route {
   // http://localhost:4200/@hashicorp/ember-flight-icons/icons/sprite.svg
 
@@ -12,7 +16,7 @@ export default class ApplicationRoute extends Route {
   }
 
   async model() {
-    console.log('here', this.contextRootURL)
+    // console.log('here', this.contextRootURL)
 
     const response = await fetch(`${this.contextRootURL}@hashicorp/ember-flight-icons/icons/_catalog.json`);
     const json = await response.json();
