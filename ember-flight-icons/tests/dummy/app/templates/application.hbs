@@ -13,3 +13,11 @@
   <li>This should be a red large "activity" icon: <FlightIcon @name="activity" @color="red" /></li>
 </ul>
 </section>
+
+We are here:
+{{#each @model as |meta|}}
+  {{!-- {{log meta.Name}} --}}
+  {{!-- returns `volume-24` we want volume ... we want some regex that removes the "-##"" --}}
+  {{!-- ^(.+?)24(.+?)$  --}}
+  <FlightIcon @name={{meta.Name}} />
+{{/each}}
