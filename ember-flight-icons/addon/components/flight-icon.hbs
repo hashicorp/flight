@@ -1,6 +1,6 @@
 <svg 
   aria-hidden="true"
-  class="flight-icon icon-{{@name}} {{if this.display "display-inline"}}"
+  class="flight-icon icon-{{@name}} {{if this.display "display-inline"}} {{if this.isDemo "demo-icon"}} {{if this.isDemoHidden "d-none"}}"
   data-test-icon
   fill={{@color}} 
   height="{{this.size}}"
