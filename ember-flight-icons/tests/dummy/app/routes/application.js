@@ -14,11 +14,11 @@ export default class ApplicationRoute extends Route {
     );
     const json = await response.json();
 
-    return json.map(({ Name, Size }) => {
+    return json.map(({ name, size }) => {
       return {
-        Name,
-        Size,
-        searchable: `${Name}`,
+        name,
+        size,
+        searchable: `${name}`,
       };
     });
   }
