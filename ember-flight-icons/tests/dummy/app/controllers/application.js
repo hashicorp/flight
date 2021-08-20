@@ -27,7 +27,6 @@ export default class ApplicationController extends Controller {
 
   get iconHbsCode() {
     let iconHbsCode = `<FlightIcon @name="${this.selectedIcon}"`;
-    console.log(`selected icon: ${this.selectedIcon}`);
 
     if (this.size !== defaultSize) {
       iconHbsCode += ` @size=${this.size}`;
@@ -73,12 +72,9 @@ export default class ApplicationController extends Controller {
 
   @action
   updateSelectedItem(event) {
-    console.log('updateSelectedItem action was triggered');
     const iconWrapper = event.target.closest('.demo-icon');
-    console.log(`iconWrapper is ${iconWrapper}`);
     if (iconWrapper && iconWrapper.dataset.Name) {
       this.selectedIcon = iconWrapper.dataset.Name;
-      console.log(`dataset is ${iconWrapper.dataset.Name}`);
     }
   }
 }
