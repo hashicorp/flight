@@ -56,12 +56,4 @@ export default class FlightIconComponent extends Component {
   get size() {
     return this.args.size ?? '24';
   }
-
-  get isDemo() {
-    return this.args.isDemo ?? false;
-  }
-
-  get isDemoHidden() {
-    return this.args.isDemoHidden ?? false;
-  }
 }

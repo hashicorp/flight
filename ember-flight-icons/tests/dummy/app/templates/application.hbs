@@ -21,7 +21,7 @@
     </h2>
     <div class="ds-form-group-inline">
       <label class="ds-input-label" for="ds-input-search">
-        Search to filter results:
+        Search to live-filter results:
       </label>
       <input
         value={{this.search}}
@@ -38,8 +38,7 @@
           <FlightIcon
             @name={{meta.name}}
             @size={{if (eq meta.size 16) '16'}}
-            @isDemo={{true}}
-            @isDemoHidden={{if (eq meta.isHidden true) true}}
+            class="demo-icon"
           />
           {{meta.name}}-{{meta.size}}
         </li>

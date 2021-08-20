@@ -46,6 +46,11 @@ module('Integration | Component | flight-icon', function (hooks) {
     await render(hbs`<FlightIcon @name="activity" @isInlineBlock={{false}} />`);
     assert.dom('svg.flight-icon').doesNotHaveClass('display-inline');
   });
+  // the component should support appending additional CSS classes when invoked
+  test('additional classes can be added when component is invoked', async function (assert) {
+    await render(hbs`<FlightIcon @name="meh" class="demo" />`);
+    assert.dom(`svg.flight-icon`).hasClass('demo');
+  });
   // TODO: the component should have `color` set to `currentColor` by default
   // TODO: there should be an error if an icon name is not provided
 });
