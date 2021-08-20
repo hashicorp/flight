@@ -24,6 +24,7 @@ h1.ds-h1 {
   padding: 0 0.5em;
 }
 main.ds-main {
+  flex: 1 0 auto;
   padding: 0 1em 1em 1em;
 }
 p.ds-p {
@@ -51,11 +52,14 @@ h2.ds-h2 {
 .ds-form-group-inline input.ds-input {
   border: 1px solid var(--gray-2);
   border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1em;
   line-height: 2;
   min-width:100%;
+  padding: 0 0.25em;
 }
 .ds-form-group-inline input.ds-input:focus {
-  border: var(--brand);
+  border: 1px solid var(--brand);
 }
 
 ul.ds-ul-grid {
@@ -88,7 +92,9 @@ ul.ds-ul-grid li.ds-li svg.flight-icon {
 
 
 footer.ds-footer {
-  background-color: var(--black);
+  background-color: var(--code-dark);
+  color: var(--code-light);
+  flex-shrink: 0;
 }
 
 footer.ds-footer p.ds-p a.ds-a {

@@ -43,7 +43,7 @@ Icons are set to a `viewBox` square size of 24 by default.
 <FlightIcon @name="activity" />
 ```
 
-Currently, we support a `viewBox` square size of 24 or 16. If you need your icon to be smaller than 24, pass in `size`. 
+Currently, we support a `viewBox` square size of 24 or 16. If you need your icon to be smaller than 24, pass in `size`.
 
 ```hbs
 <FlightIcon @name="activity" @size="16" />
@@ -59,6 +59,12 @@ Icons are set to `fill="currentColor"` by default. To change this, set the desir
 
 ```hbs
 <FlightIcon @name="activity" @color="red" />
+```
+
+Additional CSS classes can be appended to the component.
+
+```hbs
+<FlightIcon @name="meh" class="demo" />
 ```
 
 ### Note
