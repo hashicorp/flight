@@ -2,6 +2,7 @@ import Component from '@glimmer/component';
 import { guidFor } from '@ember/object/internals';
 import { getOwner } from '@ember/application';
 import { assert } from '@ember/debug';
+
 export default class FlightIconComponent extends Component {
   get contextRootURL() {
     const config = getOwner(this).resolveRegistration('config:environment');
@@ -26,10 +27,10 @@ export default class FlightIconComponent extends Component {
   iconId = 'icon-' + guidFor(this);
 
   /**
-   * Indicates which icon should be used
+   * Indicates which icon should be used. An error (in the form of an assertion)
+   * will occur if a value has not been provided.
    *
    * @param name {string}
-   * @default console.error('Please assign a value to @name');
    */
   get name() {
     return this.args.name;
