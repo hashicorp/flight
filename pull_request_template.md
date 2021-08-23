@@ -18,7 +18,6 @@ Examples:
 <!-- If more details are appropriate, add them here. What code changed, and why? -->
 
 
-## :flags: Feature Flag
 
 <!-- Include any related feature flag names if appropriate. -->
 
