@@ -17,10 +17,6 @@ Examples:
 
 <!-- If more details are appropriate, add them here. What code changed, and why? -->
 
-
-
-
-
 ## :camera_flash: Screenshots
 
 <!-- Screenshots always help, especially if this PR will change what renders to the browser -->
