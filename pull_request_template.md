@@ -19,7 +19,6 @@ Examples:
 
 
 
-<!-- Include any related feature flag names if appropriate. -->
 
 
 ## :camera_flash: Screenshots
