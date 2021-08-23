@@ -36,11 +36,11 @@
       {{#each @model as |meta|}}
         <li class="ds-li {{if meta.isHidden 'd-none'}}">
           <FlightIcon
-            @name={{meta.name}}
+            @name={{Onlyname meta.name}}
             @size={{if (eq meta.size 16) '16'}}
             class="demo-icon"
           />
-          {{meta.name}}-{{meta.size}}
+          {{meta.name}}
         </li>
       {{/each}}
     </ul>
