@@ -30,6 +30,8 @@ Examples:
 
 <!-- List steps to test your change on a local environment. -->
 
+Note: Ignore failing tests for `ember-canary` and `embroider-optimized` right now, are failing on main. For context, see [this comment](https://github.com/hashicorp/flight/pull/79#issuecomment-903956989).
+
 
 ## :+1: Definition of Done
 
