@@ -51,6 +51,15 @@ module('Integration | Component | flight-icon', function (hooks) {
     await render(hbs`<FlightIcon @name="meh" class="demo" />`);
     assert.dom(`svg.flight-icon`).hasClass('demo');
   });
+  // The component color property should accept :root variable values
+  test('the color property should accept :root variable values', async function (assert) {
+    await render(
+      hbs`<FlightIcon @name="alert-circle" @color="var(--danger-d1)" />`
+    );
+    assert.dom(`svg.flight-icon`).hasStyle({
+      fill: 'rgb(186, 34, 38)',
+    });
+  });
   // TODO: the component should have `color` set to `currentColor` by default
   // TODO: there should be an error if an icon name is not provided
 });

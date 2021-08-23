@@ -105,3 +105,12 @@ footer.ds-footer p.ds-p a.ds-a {
 .d-none {
   display: none !important;
 }
+
+/* test classes */
+.ds-text-red {
+  color: var(--danger-d1);
+}
+
+.ds-font-size-large {
+  font-size: 5em;
+}
