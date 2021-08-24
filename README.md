@@ -4,9 +4,9 @@
 
 ## Development instructions
 
-To generate the sprite file, [sprite.svg](ember-flight-icons/public/icons/sprite.svg), follow the instructions in the README of [edenspiekermann/sprite.sh](https://github.com/edenspiekermann/sprite.sh) e.g.
+Following an export from Figma, you'll need to generate the sprite file, [sprite.svg](ember-flight-icons/public/icons/sprite.svg), follow the instructions in the README of [edenspiekermann/sprite.sh](https://github.com/edenspiekermann/sprite.sh) e.g.
 
-- `cd ember-flight-icons/public/icons` so that the `sprite.svg` file will be created in the right directory
+- `cd export-go/dist` so that the `sprite.svg` file will be created in the right directory
 - `npx spritesh`
 
 ## How to consume the Ember addon
