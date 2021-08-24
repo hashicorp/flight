@@ -61,7 +61,7 @@
     "@embroider/test-setup": "^0.41.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "@hashicorp/flight-icons": "^0.0.2-beta",
+    "@hashicorp/flight-icons": "^0.0.3-beta",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.11.3",
