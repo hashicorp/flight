@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "description": "The Ember addon for the HashiCorp Flight SVG icon set",
   "keywords": [
-    "ember-addon", "hashicorp", "icon", "svg", "flight"
+    "ember-addon",
+    "hashicorp",
+    "icon",
+    "svg",
+    "flight"
   ],
   "repository": "https://github.com/hashicorp/flight/ember-flight-icons",
   "license": "MPL-2.0",
@@ -57,6 +61,7 @@
     "@embroider/test-setup": "^0.41.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
+    "@hashicorp/flight-icons": "^0.0.2-beta",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.11.3",

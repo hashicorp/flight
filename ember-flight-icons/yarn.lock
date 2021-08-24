@@ -1288,6 +1288,11 @@
   resolved "https://registry.yarnpkg.com/@handlebars/parser/-/parser-1.1.0.tgz#d6dbc7574774b238114582410e8fee0dc3532bdf"
   integrity sha512-rR7tJoSwJ2eooOpYGxGGW95sLq6GXUaS1UtWvN7pei6n2/okYvCGld9vsUTvkl2migxbkszsycwtMf/GEc1k1A==
 
+"@hashicorp/flight-icons@^0.0.2-beta":
+  version "0.0.2-beta"
+  resolved "https://registry.yarnpkg.com/@hashicorp/flight-icons/-/flight-icons-0.0.2-beta.tgz#cd7b1e471a21c7e5d5629aa11602c16a1d0505c9"
+  integrity sha512-atST9jf4o7r8JlZrU59waUoBMEPb+5DOaA9AdvnVtFWxQ5vEmZ7Fp9CboWEH0ctRJs1I5FY9fT0qWHsh4PWWZg==
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
