@@ -1,6 +1,6 @@
 # flight-icons
 
-An addon for the icons from `flight`. Currently in development.
+An addon for the icons from `flight`. Currently in development. This addon can be used in React or Ember apps.
 
 ## Installation
 

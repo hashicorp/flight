@@ -26,7 +26,7 @@ Please see [ember-flight-icons/README](ember-flight-icons/README.md).
 
 🚨 Note: npm addon is currently in beta and not intended for production use yet.
 
-This addon can be used in React or Ember apps.
+Please see [flight-icons/README](flight-icons/README.md).
 
 ## Development instructions for `@hashicorp/ember-flight-icons` and `@hashicorp/flight-icons`
 
