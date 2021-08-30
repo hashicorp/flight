@@ -24,17 +24,15 @@ module('Integration | Component | flight-icon', function (hooks) {
   });
   test('it renders the 16x16 icon by default', async function (assert) {
     await render(hbs`<FlightIcon @name="activity" />`);
-    assert.dom('svg.flight-icon.icon-activity.display-inline').hasStyle({
-      height: '16px',
-      width: '16px',
-    });
+    assert
+      .dom('svg.flight-icon.icon-activity.display-inline')
+      .hasAttribute('viewBox', '0 0 16 16');
   });
   test('it renders the 24x24 icon when option is set', async function (assert) {
     await render(hbs`<FlightIcon @name="activity" @size="24" />`);
-    assert.dom('svg.flight-icon.icon-activity.display-inline').hasStyle({
-      height: '24px',
-      width: '24px',
-    });
+    assert
+      .dom('svg.flight-icon.icon-activity.display-inline')
+      .hasAttribute('viewBox', '0 0 24 24');
   });
   test('it does not have the display-inline class if the option is set to false', async function (assert) {
     await render(hbs`<FlightIcon @name="activity" @isInlineBlock={{false}} />`);
