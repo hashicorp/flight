@@ -84,7 +84,7 @@ ul.ds-ul-grid li.ds-li {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 0.75em;
+  font-size: 1em;
   gap: 1ch;
   justify-content: center;
   padding: 0.5em 0.15em 0.15em;
@@ -97,24 +97,30 @@ ul.ds-ul-grid li.ds-li:hover {
   box-shadow: 0 0 0 1px var(--info-l1);
 }
 ul.ds-ul-grid li.ds-li .ds-icon-frame {
-  padding: 6px;
-  margin-top: auto;
-  display: flex;
+  align-items: center;
   background: white;
   border-radius: 2px;
   box-shadow: 0 0 0 1px var(--gray-5);
+  display: flex;
+  font-size: 1.5em;
+  justify-content: center;
+  margin-top: auto;
+  min-height: 50%;
+  min-width: 50%;
+  padding: 6px;
 }
 ul.ds-ul-grid li.ds-li:hover .ds-icon-frame {
-  color: var(--brand-link);
   box-shadow: 0 0 0 1px var(--info-l1);
+  color: var(--brand-link);
 }
-ul.ds-ul-grid li.ds-li p {
-  text-align: center;
+ul.ds-ul-grid li.ds-li p.ds-p {
+  font-size: 0.75em;
   margin-top: auto;
-  width: 100%;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 }
 
 footer.ds-footer {
@@ -130,13 +136,4 @@ footer.ds-footer p.ds-p a.ds-a {
 
 .d-none {
   display: none !important;
-}
-
-/* test classes */
-.ds-text-red {
-  color: var(--danger-d1);
-}
-
-.ds-font-size-large {
-  font-size: 5em;
 }
