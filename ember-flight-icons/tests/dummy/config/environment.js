@@ -6,6 +6,15 @@ module.exports = function (environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    // pageTitle: {
+    //   replace: false,
+    //   prepend: true,
+    // },
+    'ember-cli-markdown-resolver': {
+      folders: {
+        docs: 'app/docs',
+      },
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -20,6 +29,9 @@ module.exports = function (environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    fastboot: {
+      hostWhiteList: [/^localhost:\d+$/],
     },
   };
 

@@ -7,6 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('engineering');
-  this.route('design');
+  this.route('docs', function () {
+    this.route('post', { path: '/*path/' });
+  });
 });
