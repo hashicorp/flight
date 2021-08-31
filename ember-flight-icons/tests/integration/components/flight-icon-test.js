@@ -52,7 +52,7 @@ module('Integration | Component | flight-icon', function (hooks) {
       fill: 'rgb(186, 34, 38)',
     });
   });
-  test('the fill should be set to black by default', async function (assert) {
+  test('the fill color should be set to black by default', async function (assert) {
     await render(hbs`<FlightIcon @name="meh" />`);
     assert.dom(`svg.flight-icon`).hasStyle({
       fill: 'rgb(0, 0, 0)',
