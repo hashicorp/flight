@@ -30,18 +30,11 @@
 
 name: CI - Ember Flight Icons
 
-defaults:
-  run:
-    working-directory: ember-flight-icons
 on:
   push:
     branches:
       - main
-    paths:
-      - 'ember-flight-icons/**'
-  pull_request:
-    paths:
-      - 'ember-flight-icons/**'
+
 env:
   NODE_VERSION: '10.x'
 
