@@ -1,6 +1,9 @@
 {
   "name": "@hashicorp/flight-codemods",
   "version": "0.1.0",
+  "description": "Flight: Codemods",
+  "license": "MPL-2.0",
+  "author": "HashiCorp Design Systems <design-systems@hashicorp.com>",
   "scripts": {
     "lint": "eslint --cache .",
     "test": "codemod-cli test",
@@ -10,7 +13,7 @@
   },
   "bin": "./bin/cli.js",
   "keywords": [
-    "codemod-cli"
+    "codemod-cli", "hashicorp", "icon", "svg", "flight"
   ],
   "dependencies": {
     "codemod-cli": "^3.2.0"
