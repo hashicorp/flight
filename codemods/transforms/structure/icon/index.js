@@ -1,20 +1,14 @@
 module.exports = function ({ source /*, path*/ }, { parse, visit }) {
   const ast = parse(source);
-  const fs = require('fs');
-  const path = require('path');
+  const mappings = require('./structure-mappings.json');
 
-  return visit(ast, (env) => {
-    let { builders: b } = env.syntax;
-
+  return visit(ast, () => {
     return {
       ElementNode(node) {
         let nameAttribute;
         // Map incoming @type to a @name
-        let jsonPath = path.join(__dirname, 'structure-mappings.json');
-        let rawdata = fs.readFileSync(jsonPath);
-        let mappings = JSON.parse(rawdata);
 
-        if (node.tag === 'Pds::Icon') {
+        if (node.tag === 'Pds::Icon' || node.tag === 'Icon') {
           let typeAttribute = node.attributes.find(({ name }) => name === '@type');
           // if we are sure this is a PDS:Icon with @type prop
           if (typeAttribute !== undefined) {
