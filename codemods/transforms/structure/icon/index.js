@@ -10,7 +10,7 @@ module.exports = function ({ source /*, path*/ }, { parse, visit }) {
       ElementNode(node) {
         let nameAttribute;
         // Map incoming @type to a @name
-        let jsonPath = path.join('..', 'structure-mappings.json');
+        let jsonPath = path.join(__dirname, 'structure-mappings.json');
         let rawdata = fs.readFileSync(jsonPath);
         let mappings = JSON.parse(rawdata);
 
