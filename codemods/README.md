@@ -24,6 +24,7 @@ node ./bin/cli.js <TRANSFORM NAME> path/of/files/ or/some**/*glob.js
 ## Transforms
 
 <!--TRANSFORMS_START-->
+* [structure](transforms/structure/README.md)
 <!--TRANSFORMS_END-->
 
 ## Contributing
