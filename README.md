@@ -42,11 +42,19 @@ _Click the Team library icon (looks like an open book), toggle on Flight Icons_
 
 ### Icon Types
 
+![example of icon types](/assets/images/icon-types.png)
+
 ### Icon Sizes
+
+![example of icon sizes](/assets/images/icon-sizes.png)
 
 ### States
 
+![example of icon states](/assets/images/icon-states.png)
+
 ### Actions
+
+![example of common actions](/assets/images/icon-actions.png)
 
 ## Contributing
 
