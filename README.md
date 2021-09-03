@@ -44,9 +44,29 @@ _Click the Team library icon (looks like an open book), toggle on Flight Icons_
 
 ![example of icon types](ember-flight-icons/tests/dummy/public/assets/images/icon-types.png)
 
+* Use the `Generic` style icons by default
+* Use the `Filled` style if indicating the toggled state of an icon
+* Use the `Filled` style where contrast against other icons is important
+* Use the `Off` style icons to indicate a disabled state
+
 ### Icon Sizes
 
 ![example of icon sizes](ember-flight-icons/tests/dummy/public/assets/images/icon-sizes.png)
+
+#### Guidance
+
+:white_check_mark: Display icons at either `16px` or `24px`
+:white_check_mark: Use `16px` icons by default in product interfaces
+:white_check_mark: Consider using `24px` icons in product interfaces for empty states
+:warning: Take care if choosing to display icons at sizes other than `16px` and `24px`  
+_There may be cases where 16px and 24px values don't fit a design - Flight icons can be resized in these cases but be aware that the design is not optimized for values other than these_
+
+#### Updating existing interfaces
+
+:white_check_mark: Where the current icon size is less than or equal to `20px`, replace icons with `16px` versions
+:white_check_mark: If the size of icon to be replaced is at least `21px`, first try to replace it with a `24px` version  
+_If 24px seems too large, consider dropping down to 16px and reworking the interface for a better fit_
+
 
 ### States
 
