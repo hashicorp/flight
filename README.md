@@ -53,26 +53,33 @@ _Click the Team library icon (looks like an open book), toggle on Flight Icons_
 
 ![example of icon sizes](ember-flight-icons/tests/dummy/public/assets/images/icon-sizes.png)
 
+* Use the `16px` size in product interfaces
+* Use the `24px` size in marketing pages
+
 #### Guidance
 
-:white_check_mark: Display icons at either `16px` or `24px`
-:white_check_mark: Use `16px` icons by default in product interfaces
-:white_check_mark: Consider using `24px` icons in product interfaces for empty states
+:white_check_mark: Display icons at either `16px` or `24px`  
+:white_check_mark: Use `16px` icons by default in product interfaces  
+:white_check_mark: Consider using `24px` icons in product interfaces for empty states  
 :warning: Take care if choosing to display icons at sizes other than `16px` and `24px`  
 _There may be cases where 16px and 24px values don't fit a design - Flight icons can be resized in these cases but be aware that the design is not optimized for values other than these_
 
 #### Updating existing interfaces
 
-:white_check_mark: Where the current icon size is less than or equal to `20px`, replace icons with `16px` versions
+:white_check_mark: Where the current icon size is less than or equal to `20px`, replace icons with `16px` versions  
 :white_check_mark: If the size of icon to be replaced is at least `21px`, first try to replace it with a `24px` version  
 _If 24px seems too large, consider dropping down to 16px and reworking the interface for a better fit_
 
 
 ### States
 
+Some common state icons that get used within the products include:  
+
 ![example of icon states](ember-flight-icons/tests/dummy/public/assets/images/icon-states.png)
 
 ### Actions
+
+Some common action icons that get used within the products include:  
 
 ![example of common actions](ember-flight-icons/tests/dummy/public/assets/images/icon-actions.png)
 
@@ -82,8 +89,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ### How to contribute a new icon in Figma (HashiCorp staff only)
 
-1. [Open a GitHub issue](https://github.com/hashicorp/flight/issues/new) to kick-off work on adding a new icon  
-_Outline the use case for a new icon, why an existing icon isn't a good fit if there is one, and include any screenshots or WIP if you've done some initial work on a proposal for the icon._
+1. [Open a GitHub issue](https://github.com/hashicorp/flight/issues/new?assignees=&labels=enhancement%2C+triage&template=icon-request.md&title=Flight+Icon+Request%3A+%5Bicon-name%5D) to kick-off work on adding a new icon  
 
 2. If you're ready to develop the new icon, create a new branch within [✏️Flight Development](https://www.figma.com/file/MYiw4kiVpunIMMw0sBkE1t/%E2%9C%8F%EF%B8%8F-Flight-Development?node-id=205%3A0)  
 _You can do this from the Main menu (File > Create branch...)_  
