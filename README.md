@@ -38,6 +38,16 @@ _Click the Team library icon (looks like an open book), toggle on Flight Icons_
 
 💡 Tip: Swapping instances, sizes, and colors is easy to do from the right sidebar
 
+## Best Practices
+
+### Icon Types
+
+### Icon Sizes
+
+### States
+
+### Actions
+
 ## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
@@ -51,14 +61,14 @@ _Outline the use case for a new icon, why an existing icon isn't a good fit if t
 _You can do this from the Main menu (File > Create branch...)_  
 _Take care to avoid working directly in the default branch!_
 
-3. Use the template component in the ```Flight Icons - Dev``` frame  
+3. Use the template component in the `Flight Icons - Dev` frame  
 _Keep your work in this frame, but feel free to create as many versions with that template component as you need._
 
 4. Draw your icon glyph using vectors  
 _Be sure to follow the design guide in the Figma file, taking care to follow the conventions around strokes, corner radius and aligning to the grid. Try to preserve the ability to edit the glyph where possible (avoid flattening)._
 
 5. When your icon is ready, post to the original GitHub issue to close the loop  
-_The Design Systems team can then add the icon to the grid, productionize it, and publish from the [production file](https://www.figma.com/file/TLnoT5AYQfy3tZ0H68BgOr/Flight-Icons?node-id=164%3A0)._
+_The Design Systems team will then add the icon to the grid, productionize it, and publish from the [production file](https://www.figma.com/file/TLnoT5AYQfy3tZ0H68BgOr/Flight-Icons?node-id=164%3A0)._
 
 ## License
 
