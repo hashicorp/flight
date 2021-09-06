@@ -1,0 +1,1 @@
+<!-- This folder will contain the output of the "build" process for CSS-based icons -->

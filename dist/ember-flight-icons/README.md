@@ -1,0 +1,2 @@
+<!-- This folder will contain the output of the "build" process for the Ember Addon -->
+<!-- IMPORTANT: this will contain only the files necessary to build the NPM package of the addon, not the whole "src/ember-flight-icons" folder  -->

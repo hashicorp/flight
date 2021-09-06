@@ -1,0 +1,8 @@
+{
+    "name": "flight-icons-scripts",
+    "private": true,
+    "scripts": {
+        "build": "ts-node --./build.ts",
+        "release": "ts-node --./build.ts"
+    }
+}

@@ -3,4 +3,5 @@
 node_modules/
 
 # Output of `npm pack`, which is an (optional) test for `npm publish`
+# TODO this should live only in a "temp" folder that gets deleted at the end of the process, so no need of this line
 *.tgz
