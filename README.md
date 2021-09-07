@@ -14,7 +14,7 @@
 
   The micro-site for this project is [https://flight-staging.vercel.app/](https://flight-staging.vercel.app/)
 
-Instructions for installation and use are available, as well as a searchable list of available icons and other useful information for designers and developers.
+Instructions for installation and use are available, as well as a searchable list of available icons and the documentation for designers and developers.
 
 ## Contributing
 
