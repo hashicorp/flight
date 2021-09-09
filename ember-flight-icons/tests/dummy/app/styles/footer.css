@@ -1,0 +1,13 @@
+footer.ds-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-center;
+  min-height: 50px;
+}
+
+footer.ds-footer p.ds-p {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 1em;
+}
