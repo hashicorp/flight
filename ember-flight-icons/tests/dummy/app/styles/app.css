@@ -1,5 +1,4 @@
 @import "./root.css";
-@import "./modern-normalize.css";
 
  /* uncomment theses lines to actually make tailwind classes work */
 @import "tailwindcss/base";
