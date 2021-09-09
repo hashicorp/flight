@@ -31,40 +31,9 @@ header.ds-header {
 }
 
 main.ds-main {
-  margin: 0 auto;
+  margin: 3.5rem auto 0 auto;
   @apply
-    sm:p-8
-    md:py-16
-    sm:w-full
-    md:w-10/12
-    lg:w-9/12;
-}
-
-
-.ds-form-group-inline {
-  display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 1.5em;
-}
-.ds-form-group-inline label.ds-input-label {
-  color: var(--code-dark);
-  font-family: var(--font-body);
-  font-weight: var(--font-weight-semi-bold);
-  margin-bottom: 0.75em;
-}
-.ds-form-group-inline input.ds-input {
-  border: 1px solid var(--gray-4);
-  border-radius: 4px;
-  font-family: var(--font-body);
-  font-size: 1em;
-  line-height: 2;
-  min-width:100%;
-  padding: 0 0.25em;
-}
-.ds-form-group-inline input.ds-input:focus {
-  border: 1px solid var(--brand);
-  box-shadow: 0 0 0 3px var(--info-l1);
-  outline: none;
+    sm:container;
 }
 
 ul.ds-ul-grid {
