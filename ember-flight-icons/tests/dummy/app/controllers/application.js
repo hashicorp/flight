@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import { action, set } from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 
-const defaultSize = '24';
+const defaultSize = '16';
 
 const checkIsShown = function (searchText, meta) {
   if (searchText === '') {
@@ -18,7 +18,7 @@ const checkIsShown = function (searchText, meta) {
 
 export default class ApplicationController extends Controller {
   @tracked selectedIcon = 'auto-apply';
-  @tracked size = '24';
+  @tracked size = '16';
   @tracked color = 'currentColor';
   @tracked searchText = '';
 

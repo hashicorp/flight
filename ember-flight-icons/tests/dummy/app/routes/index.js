@@ -1,8 +1,11 @@
 import Route from '@ember/routing/route';
 import fetch from 'fetch';
 import { getOwner } from '@ember/application';
+import { tracked } from '@glimmer/tracking';
 
 export default class IndexRoute extends Route {
+  @tracked visibleIconSize = 16;
+
   get contextRootURL() {
     const config = getOwner(this).resolveRegistration('config:environment');
     return config.rootURL || '/';

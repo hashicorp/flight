@@ -121,3 +121,99 @@ img.ds-img {
   height: auto;
   max-width: 100%;
 }
+
+
+/* Once this has been figured out, replace with TW classes */
+.this-is-the-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.this-is-the-search {
+  min-width: 80%;
+}
+.this-is-the-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+/* TODO remove any unnecessary TW classes, convert current CSS into TW*/
+button.ds-toggle-button {
+  background-color: var(--brand);
+  color: var(--white);
+  font-weight: var(--font-weight-bold);
+  height: 2.5rem;
+  width: 8rem;
+  box-sizing: border-box; 
+  @apply
+  inline-flex 
+  border-2 
+  border-transparent 
+  rounded-full 
+  cursor-pointer 
+  transition-colors 
+  ease-in-out 
+  duration-200 
+  focus:outline-none 
+  focus:ring-2 
+  focus:ring-offset-2 
+  focus:ring-brand;
+}
+
+/* TODO remove any unnecessary TW classes, convert current CSS into TW*/
+.ds-toggle-button .ds-toggle-button-slider {
+  display: flex;
+  justify-content:space-evenly;
+  color: var(--brand);
+  height: 2.25rem;
+  width: 8rem;
+  background-color: transparent;
+  box-sizing: border-box; 
+  @apply
+  pointer-events-none  
+  rounded-full 
+  shadow 
+  transform 
+  ring-0;
+}
+
+/* TODO remove any unnecessary TW classes, convert current CSS into TW*/
+.ds-toggle-16 {
+  color: var(--white);
+  width: 50%;
+  box-sizing: border-box; 
+  @apply 
+  ease-in 
+  duration-200 
+  inset-0 
+  flex 
+  items-center 
+  justify-center 
+  transition-opacity
+  rounded-full;
+}
+.ds-toggle-16.ds-toggle-16-active {
+  color: var(--brand);
+  height: 2.25rem;
+  width: 50%;
+  background-color: white;
+  @apply
+  rounded-full;
+}
+/* TODO remove any unnecessary TW classes, convert current CSS into TW*/
+.ds-toggle-24 {
+  background-color: transparent;
+  color: var(--white);
+  min-width: 4rem;
+  box-sizing: border-box; 
+  @apply 
+  rounded-full ease-out duration-100 inset-0 flex items-center justify-center transition-opacity;
+}
+.ds-toggle-24.ds-toggle-24-active {
+  color: var(--brand);
+  height: 2.25rem;
+  width: 4rem;
+  background-color: white;
+  @apply
+  rounded-full;
+}

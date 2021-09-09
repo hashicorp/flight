@@ -1,0 +1,25 @@
+<button
+  aria-checked="false"
+  aria-label="Toggle icon size (16 or 24)"
+  class="ds-toggle-button"
+  role="switch"
+  type="button"
+  {{on 'click' this.updateVisibleIconSize}}
+>
+  <!-- Enabled: "translate-x-5", Not Enabled: "translate-x-0" -->
+  <span class="ds-toggle-button-slider">
+    <!-- Enabled: "opacity-0 ease-out duration-100", Not Enabled: "opacity-100 ease-in duration-200" -->
+    <span 
+    class="ds-toggle-16 {{if (eq this.visibleIconSize '16') "ds-toggle-16-active"}}" 
+    aria-hidden="true">
+      16px
+    </span>
+    <!-- Enabled: "opacity-100 ease-in duration-200", Not Enabled: "opacity-0 ease-out duration-100" -->
+    <span 
+    class="ds-toggle-24 {{if (eq this.visibleIconSize '24') "ds-toggle-24-active"}}" 
+    aria-hidden="true">
+      24px
+    </span>
+  </span>
+
+</button>
