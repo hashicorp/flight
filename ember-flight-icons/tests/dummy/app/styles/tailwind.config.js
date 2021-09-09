@@ -52,10 +52,20 @@ module.exports = {
         'code-control': 'var(--code-control)',
       },
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '2rem',
+        sm: '4rem',
+        lg: '8rem',
+        xl: '10rem',
+        '2xl': '12rem',
+      },
+    },
   },
   variants: {
     extend: {},
   },
   // eslint-disable-next-line no-undef
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 };
