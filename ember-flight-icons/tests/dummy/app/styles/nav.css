@@ -6,7 +6,8 @@ header.ds-header nav.ds-nav {
   min-w-full
   max-w-7xl 
   mx-auto 
-  md:px-8
+  md:pr-8
+  md:pl-32
   sm:px-4 
   shadow;
 }
@@ -22,8 +23,7 @@ header.ds-header nav.ds-nav ul.ds-ul {
 header.ds-header nav.ds-nav ul.ds-ul li.ds-li {
   @apply 
   flex
-  items-stretch
-  w-24;
+  items-stretch;
 }
 
 header.ds-header nav.ds-nav ul.ds-ul li.ds-li a.ds-a {
@@ -37,13 +37,16 @@ header.ds-header nav.ds-nav ul.ds-ul li.ds-li a.ds-a {
   justify-center
   items-center 
   pt-1 
-  px-1 
+  px-4
   text-base;
 }
 
-header.ds-header nav.ds-nav ul.ds-ul li.ds-li a.ds-a:focus {
-  border-color: white;
-}
+header.ds-header nav.ds-nav ul.ds-ul li.ds-li a.ds-a:focus,
 header.ds-header nav.ds-nav ul.ds-ul li.ds-li a.ds-a:hover {
   border-color: white;
+}
+
+header.ds-header nav.ds-nav ul.ds-ul li.ds-li:first-of-type a.ds-a:focus,
+header.ds-header nav.ds-nav ul.ds-ul li.ds-li:first-of-type a.ds-a:hover {
+  border-color: transparent;
 }
