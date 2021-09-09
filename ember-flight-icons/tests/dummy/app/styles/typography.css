@@ -1,4 +1,5 @@
 p.ds-p {
+  color: var(--gray-2);
   font-family: var(--font-body);
   margin: 0.25vh auto;
   @apply text-base;
