@@ -113,7 +113,8 @@ pre.ds-pre {
 .ds-info {
   background-color: var(--info-l2);
   border: 1px solid var(--brand);
-  border-radius: 4px;
+  border-left-width: 8px;
+  border-radius: 3px;
   padding: 0.75em;
 }
 img.ds-img {
