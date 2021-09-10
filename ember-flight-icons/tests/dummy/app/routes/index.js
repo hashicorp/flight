@@ -19,7 +19,7 @@ export default class IndexRoute extends Route {
         iconName: `${iconName}`,
         name: `${fileName}`,
         size: `${size}`,
-        searchable: `${fileName}, ${description}`,
+        searchable: `${iconName}, ${description}`,
       };
     });
   }
