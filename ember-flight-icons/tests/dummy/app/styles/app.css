@@ -88,26 +88,11 @@ ul.ds-ul-grid li.ds-li p {
   display: none !important;
 }
 
-pre.ds-pre {
-  margin: 0.5em auto 1.5em auto;
-}
-.ds-code {
-  background-color: var(--gray-7);
-  border: 1px solid var(--gray-5);
-  border-radius: 4px;
-  display: block;
-  font-size: 0.9em;
-  margin: 0.25vh auto 1vh;
-  padding: 0.75em;
-}
+
 .ds-kbd {
-  color: rebeccapurple;
+  color: #D10070;
   font-size: 0.9em;
   font-weight: var(--font-weight-bold);
-}
-
-.ds-rotate-90 {
-  transform: rotate(90deg);
 }
 
 .ds-info {
@@ -217,28 +202,6 @@ button.ds-toggle-button {
   background-color: white;
   @apply
   rounded-full;
-}
-
-/* For the copy to clipboard button */
-.ds-button-copy {
-  /* background-color: var(--brand); */
-  @apply
-    w-auto  
-    flex 
-    items-center 
-    justify-center 
-    px-4 
-    py-1 
-    border 
-    border-transparent 
-    text-base 
-    font-medium 
-    rounded-md 
-    bg-brand
-    text-white
-    mb-12
-    -mt-3
-  ;
 }
 
 /* prism overrides for a11y */
