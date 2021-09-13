@@ -21,9 +21,7 @@
     <a href="#ember-flight-icons" class="ds-a" rel="external">§</a>
     Use in Ember Apps
   </h2>
-  <h3 class="ds-h3">
-    Installation
-  </h3>
+  <h3 class="ds-h3">Installation</h3>
   <p>
     To install, run
     <pre class="ds-pre mb-0"><code class="ds-code">yarn add @hashicorp/ember-flight-icons</code></pre>
@@ -48,47 +46,33 @@
         attribute: a unique, automatically generated id
       </li>
       <li class="ds-li">
-        <kbd class="ds-kbd">
-          aria-hidden
-        </kbd>
+        <kbd class="ds-kbd">aria-hidden</kbd>
         attribute: set to true
       </li>
       <li class="ds-li">
-        <kbd class="ds-kbd">
-          height
-        </kbd>
+        <kbd class="ds-kbd">height</kbd>
         and
-        <kbd class="ds-kbd">
-          width
-        </kbd>
+        <kbd class="ds-kbd">width</kbd>
         : default size of 16x16 (px)
       </li>
       <li class="ds-li">
         (CSS)
-        <kbd class="ds-kbd">
-          class
-        </kbd>
+        <kbd class="ds-kbd">class</kbd>
         : flight-icon, flight-icon-NAME, flight-icon-display-inline
       </li>
       <li class="ds-li">
         CSS display: set to
-        <kbd class="ds-kbd">
-          display:inline-block
-        </kbd>
+        <kbd class="ds-kbd">display:inline-block</kbd>
       </li>
       <li class="ds-li">
-        <kbd class="ds-kbd">
-          data-test-icon
-        </kbd>
+        <kbd class="ds-kbd">data-test-icon</kbd>
         attribute: for the author's testing convenience
       </li>
     </ol>
   </p>
   <p>
     This makes the base, required invocation quite terse-
-    <kbd class="ds-kbd">
-      @name
-    </kbd>
+    <kbd class="ds-kbd">@name</kbd>
     is the only property that requires specification. So this invocation:
     <pre class="ds-pre"><code class="ds-code">&lt;FlightIcon @name="alert-circle" /></code></pre>
     Renders to this:
@@ -107,9 +91,7 @@
   </p>
   <p>
     The
-    <kbd class="ds-kbd">
-      &lt;use>
-    </kbd>
+    <kbd class="ds-kbd">&lt;use></kbd>
     element will then render the correct svg to the shadow dom.
   </p>
 </div>
@@ -121,27 +103,16 @@
   <p>
     The following properties are customizable:
     <ul class="ds-ul">
-      <li class="ds-li">
-        fill
-      </li>
-      <li class="ds-li">
-        size (at this time, only 16 (default) and 24 are supported)
-      </li>
-      <li class="ds-li">
-        additional CSS classes
-      </li>
+      <li class="ds-li">fill</li>
+      <li class="ds-li">size (at this time, only 16 (default) and 24 are supported)</li>
+      <li class="ds-li">additional CSS classes</li>
     </ul>
   </p>
 </div>
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
-  <h4 class="ds-h4">
-    Examples
-  </h4>
+  <h4 class="ds-h4">Examples</h4>
   <p id="example-fill">
-    <strong>
-      <a href="#example-fill" class="ds-a" rel="external">§</a>
-      Fill:
-    </strong>
+    <strong><a href="#example-fill" class="ds-a" rel="external">§</a>Fill:</strong>
     To customize the fill attribute, set the
     <kbd class="ds-kbd">@color</kbd>
     value (multiple supported ways):
@@ -188,7 +159,7 @@
       @isInlineBlock
     </kbd>
     to false:
-    <pre class="ds-pre"><code class="ds-code">&lt;FlightIcon @name="triangle-fill" @isInlineBlock=&lbrace;{false}} /></code></pre>
+    <pre class="ds-pre"><code class="ds-code">&lt;FlightIcon @name="triangle-fill" @isInlineBlock=&lbrace;&lbrace;false&rbrace;&rbrace; /></code></pre>
   </p>
 </div>
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
@@ -229,17 +200,11 @@
     <kbd class="ds-kbd">aria-hidden</kbd>
     attribute to false on the SVG itself.
 This means that the icon (both the singular icon and the icon component) will need to be used
-    <em class="ds-em">
-      in context
-    </em>
-    .
-The icons themselves are for presentation purposes only and should never be used on their own.
+    <em class="ds-em">in context</em>. The icons themselves are for presentation purposes only and should never be used on their own.
   </p>
 </div>
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
-  <h3 class="ds-h3">
-    Example
-  </h3>
+  <h3 class="ds-h3">Examples</h3>
   <pre class="ds-pre"><code class="ds-code">&lt;button aria-label="Check Activity">
   &lt;FlightIcon @name="activity" />
 &lt;/button></code></pre>
