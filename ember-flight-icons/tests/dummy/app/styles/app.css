@@ -88,26 +88,11 @@ ul.ds-ul-grid li.ds-li p {
   display: none !important;
 }
 
-pre.ds-pre {
-  margin: 0.5em auto 1.5em auto;
-}
-.ds-code {
-  background-color: var(--gray-7);
-  border: 1px solid var(--gray-5);
-  border-radius: 4px;
-  display: block;
-  font-size: 0.9em;
-  margin: 0.25vh auto 1vh;
-  padding: 0.75em;
-}
+
 .ds-kbd {
-  color: rebeccapurple;
+  color: #D10070;
   font-size: 0.9em;
   font-weight: var(--font-weight-bold);
-}
-
-.ds-rotate-90 {
-  transform: rotate(90deg);
 }
 
 .ds-info {
@@ -217,4 +202,33 @@ button.ds-toggle-button {
   background-color: white;
   @apply
   rounded-full;
+}
+
+/* prism overrides for a11y */
+div.code-toolbar > .toolbar {
+  opacity: 1;
+  top: 0;
+  right: 0.5em;
+
+}
+div.code-toolbar > .toolbar > .toolbar-item > a, div.code-toolbar > .toolbar > .toolbar-item > button, div.code-toolbar > .toolbar > .toolbar-item > span {
+  background-color: white;
+  color: var(--brand);
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+  color: #ff3ea6;
+}
+
+.token.punctuation {
+  color: var(--gray-5);
+}
+
+.prose-lg pre.language-markup {
+  @apply mt-0;
 }
