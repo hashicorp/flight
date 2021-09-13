@@ -68,13 +68,12 @@
       </div>
     </div>
     <div class="this-is-the-toggle">
-      <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
       <DsToggleButton />
     </div>
   </div>
-  <ul class="ds-ul-grid" data-test-target="icon-grid">
+  <DsUl @currentIconSize={{this.visibleIconSize}}>
     {{#each @model as |meta|}}
-      <li class="ds-li {{if meta.isHidden 'd-none'}}">
+      <li class="ds-li {{if meta.isHidden 'd-none'}} {{if (not-eq meta.size this.currentIconSize) 'd-none'}}">
         <div class="ds-icon-frame">
           <FlightIcon
             @name={{meta.iconName}}
@@ -85,5 +84,5 @@
         <p>{{meta.name}}</p>
       </li>
     {{/each}}
-  </ul>
+  </DsUl>
 </section>

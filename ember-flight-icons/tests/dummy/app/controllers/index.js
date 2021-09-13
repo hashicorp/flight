@@ -18,12 +18,14 @@ const checkIsShown = function (searchText, meta) {
 
 export default class IndexController extends Controller {
   @tracked selectedIcon = 'auto-apply';
-  @tracked size = '24';
+  @tracked size = '16';
   @tracked color = 'currentColor';
   @tracked searchText = '';
 
   @tracked search;
   @tracked emptyResults = false;
+
+  @tracked currentIconSize = '16';
 
   get iconHbsCode() {
     let iconHbsCode = `<FlightIcon @name="${this.selectedIcon}"`;
