@@ -13,7 +13,7 @@
   <h2 class="ds-h2" id="ember-flight-icons"><a href="#ember-flight-icons" class="ds-a" rel="external">&sect;</a> Use in Ember Apps</h2>
   <h3 class="ds-h3">Installation</h3>
   <p>To install, run
-  <pre class="ds-pre"><code class="ds-code">yarn add @hashicorp/ember-flight-icons</code></pre>
+  <CodeBlock @code="yarn add @hashicorp/ember-flight-icons" @language="bash" />
   </p>
 </div>
 
@@ -33,12 +33,12 @@
 
   <p>This makes the base, required invocation quite terse- <kbd class="ds-kbd">@name</kbd> is the only property that requires specification.
   So this invocation:
-  <pre class="ds-pre" id="component-invocation-base"><code class="ds-code">&lt;FlightIcon @name="alert-circle" /></code></pre>
-  {{#if (is-clipboard-supported)}}
+  <CodeBlock @language="markup" id="component-invocation-base" @code="&lt;FlightIcon @name=&quot;alert-circle&quot; />" />
+  {{!-- {{#if (is-clipboard-supported)}}
     <CopyButton @clipboardTarget="#component-invocation-base" class="ds-button-copy">
       Copy this code
     </CopyButton>
-  {{/if}}
+  {{/if}} --}}
   </p>
 
   <p>
