@@ -265,3 +265,7 @@ div.code-toolbar > .toolbar > .toolbar-item > a, div.code-toolbar > .toolbar > .
 .token.punctuation {
   color: var(--gray-5);
 }
+
+.prose-lg pre.language-markup {
+  @apply mt-0;
+}
