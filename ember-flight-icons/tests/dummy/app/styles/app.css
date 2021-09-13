@@ -218,3 +218,25 @@ button.ds-toggle-button {
   @apply
   rounded-full;
 }
+
+/* For the copy to clipboard button */
+.ds-button-copy {
+  /* background-color: var(--brand); */
+  @apply
+    w-auto  
+    flex 
+    items-center 
+    justify-center 
+    px-4 
+    py-1 
+    border 
+    border-transparent 
+    text-base 
+    font-medium 
+    rounded-md 
+    bg-brand
+    text-white
+    mb-12
+    -mt-3
+  ;
+}
