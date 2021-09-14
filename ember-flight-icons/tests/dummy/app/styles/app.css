@@ -37,6 +37,7 @@ main.ds-main {
 }
 
 ul.ds-ul-grid {
+  box-sizing: border-box;
   display: grid;
   font-family: var(--font-body);
   gap: 16px;
@@ -55,7 +56,6 @@ ul.ds-ul-grid li.ds-li {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  font-size: 0.75em;
   gap: 1ch;
   justify-content: center;
   padding: 0.5em 0.15em 0.15em;
@@ -75,10 +75,12 @@ ul.ds-ul-grid li.ds-li .ds-icon-frame {
 }
 ul.ds-ul-grid li.ds-li:hover .ds-icon-frame {
   box-shadow: 0 0 0 1px var(--info-l1);
+  box-sizing: border-box;
   color: var(--brand-link);
 }
 ul.ds-ul-grid li.ds-li p {
   box-sizing: border-box;
+  font-size: 0.75em;
   margin-top: auto;
   overflow: hidden;
   text-align: center;
