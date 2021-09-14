@@ -37,6 +37,16 @@ import { config } from './config';
 async function sync() {
 
     // remove existing output folder
+    /* 
+        Question: do we need to run this every time, or could we just overwrite icons that have changed? 
+        No strong opinion, just curious of the thought here. 
+        I guess the catalog.json has the date, so the corresponding SVGs should also be fresh.
+        
+        - Is a good next step to have ember-flight-icons consume flight-icons? 
+        - I'm not really following flight-icons-svg vs. flight-icons-svg-sprite. Those could also be packages if we want everything atomic?
+        - For context, the issue in ember-flight-icons consuming flight-icons before, was in stepping through
+        the flight-icons sprite file in Ember for the `use`. I timeboxed it, but can figure it out, if that's the direction we're going.
+    */
     try {
         console.log('Removing "sync" output folder');
         del.sync(config.srcFolder, { force: true });
