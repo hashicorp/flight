@@ -236,3 +236,9 @@ div.code-toolbar > .toolbar > .toolbar-item > a, div.code-toolbar > .toolbar > .
 .prose-lg pre.language-markup {
   @apply mt-0;
 }
+
+
+/* some editing utilities */
+.ds-b-red {
+  border: 1px solid red;
+}
