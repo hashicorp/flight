@@ -48,42 +48,5 @@
 
 <section class="ds-section" aria-labelledby="available-icons">
   <h2 class="ds-h2 mb-3" id="available-icons">Available Icons</h2>
-  <div class="this-is-the-row flex mb-14">
-    <div class="this-is-the-search">
-      <label for="ds-input-search" class="block font-medium text-gray-2">Filter Results</label>
-      <div class="mt-1 relative rounded-md shadow-sm">
-      <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-        <FlightIcon @name="search" @color="var(--gray-3)" />
-      </div>
-        <input 
-        type="text" 
-        name="search" 
-        id="ds-input-search" 
-        class="shadow-sm focus:ring-brand focus:border-brand block w-full pl-10 sm:text-sm border-gray-300 rounded-md" 
-        placeholder="e.g. arrow"
-        autofocus={{false}}
-        value={{this.search}}
-        {{on 'input' this.debouncedUpdate}}
-        >
-      </div>
-    </div>
-    <div class="this-is-the-toggle">
-      <!-- Enabled: "bg-indigo-600", Not Enabled: "bg-gray-200" -->
-      <DsToggleButton />
-    </div>
-  </div>
-  <ul class="ds-ul-grid" data-test-target="icon-grid">
-    {{#each @model as |meta|}}
-      <li class="ds-li {{if meta.isHidden 'd-none'}}">
-        <div class="ds-icon-frame">
-          <FlightIcon
-            @name={{meta.iconName}}
-            @size="{{meta.size}}"
-            class="demo-icon"
-          />
-        </div>
-        <p>{{meta.name}}</p>
-      </li>
-    {{/each}}
-  </ul>
+  <DsIconGrid />
 </section>
