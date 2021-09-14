@@ -12,7 +12,7 @@ There are three distinct steps in the process:
 
 ### Sync
 
-The synchronization step is executed by the `/scripts/sync.ts` file. To run this script use the following command in your CLI:
+The synchronization step is executed by the `/scripts/sync.ts` file. To run this script use the following command in your CLI from `/flight-icons/scripts`:
 
 ```bash
 yarn sync
