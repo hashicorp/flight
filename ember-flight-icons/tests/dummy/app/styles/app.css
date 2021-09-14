@@ -49,39 +49,42 @@ ul.ds-ul-grid {
 }
 ul.ds-ul-grid li.ds-li {
   align-items: center;
+  background: var(--gray-7);
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px var(--gray-5);
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   font-size: 0.75em;
   gap: 1ch;
   justify-content: center;
   padding: 0.5em 0.15em 0.15em;
-  background: var(--gray-7);
-  border-radius: 3px;
-  box-shadow: 0 0 0 1px var(--gray-5);
 }
 ul.ds-ul-grid li.ds-li:hover {
   background-color: var(--info-l2);
   box-shadow: 0 0 0 1px var(--info-l1);
 }
 ul.ds-ul-grid li.ds-li .ds-icon-frame {
-  padding: 6px;
-  margin-top: auto;
-  display: flex;
   background: white;
   border-radius: 2px;
   box-shadow: 0 0 0 1px var(--gray-5);
+  box-sizing: border-box;
+  display: flex;
+  margin-top: auto;
+  padding: 6px;
 }
 ul.ds-ul-grid li.ds-li:hover .ds-icon-frame {
-  color: var(--brand-link);
   box-shadow: 0 0 0 1px var(--info-l1);
+  color: var(--brand-link);
 }
 ul.ds-ul-grid li.ds-li p {
-  text-align: center;
+  box-sizing: border-box;
   margin-top: auto;
-  width: 100%;
-  text-overflow: ellipsis;
   overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
 }
 
 .d-none {

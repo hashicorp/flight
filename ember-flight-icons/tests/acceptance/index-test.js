@@ -8,7 +8,6 @@ module('Acceptance | icon index', function (hooks) {
   // sanity checking that the docs are doing something vaguely resembling what we expect
   test('visiting / renders a list of icons', async function (assert) {
     await visit('/');
-
     assert.dom('[data-test-target="icon-grid"] [data-test-icon]').exists();
   });
 });
