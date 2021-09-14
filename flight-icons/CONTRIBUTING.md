@@ -35,10 +35,9 @@ yarn build
 This action will:
 
 * Optimize the SVG files
-* Prepare a bundle with standalone SVGs
-* Prepare a bundle with an SVG sprite
-* Prepare a bundle with SVGs embedded in CSS/SCSS as data:image
-* Update the SVG sprite and catalog.json files in the Ember addon folder
+* Prepare a bundle with standalone SVGs in `/dist/flight-icons-svg/svg`
+* Prepare a bundle with an SVG sprite in `/dist-flight-icons-svg-sprite`
+* Update the SVG sprite and catalog.json files in the `./ember-flight-icons/public/icons` addon folder
 
 ### Release
 
