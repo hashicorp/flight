@@ -66,7 +66,7 @@ export default class FlightIconComponent extends Component {
   }
 
   /**
-   * Generates a unique ID for the title, if one exists
+   * Generates a unique ID for the title
    *
    * @param titleId
    */

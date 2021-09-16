@@ -96,7 +96,7 @@ module('Integration | Component | flight-icon', function (hooks) {
     await render(
       hbs`<FlightIcon @name="activity" @title="computer says no" />`
     );
-    assert.dom('g.flight-icon-g').hasAttribute('role');
+    assert.dom('svg > g').hasAttribute('role');
   });
   // TODO: there should be an error if an icon name is not provided
 });
