@@ -2,11 +2,11 @@
   class="flight-icon flight-icon-{{@name}} {{if this.display "flight-icon-display-inline"}}"
   ...attributes
   aria-hidden="{{if @title "false" "true"}}"
-  role={{this.role}}
   aria-labelledby={{this.ariaLabelledby}}
-  data-test-icon
+  data-test-icon={{@name}}
   fill="{{this.color}}"
   id={{this.iconId}}
+  role={{this.role}}
   width="{{this.size}}"
   height="{{this.size}}"
   viewBox="0 0 {{this.size}} {{this.size}}"
