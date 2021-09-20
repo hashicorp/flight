@@ -33,6 +33,7 @@ html {
   font-family: var(--font-body);
   font-size: var(--font-size-default);
 }
+
 body.ds-body {
   line-height: 1.2;
   @apply
@@ -43,6 +44,7 @@ body.ds-body {
   min-h-screen
   p-0;
 }
+
 header.ds-header {
   @apply
   bg-brand
@@ -58,13 +60,11 @@ main.ds-main {
     sm:container;
 }
 
-
 .ds-kbd {
   color: #D10070; /* to coordinate with the current prism theme */
   font-size: 0.9em;
   @apply
   font-bold;
-  
 }
 
 .ds-info {
@@ -78,20 +78,14 @@ main.ds-main {
   rounded-md
   md:max-w-4xl
   lg:max-w-3xl;
-
 }
+
 img.ds-img {
   @apply
   block
   h-auto
   max-w-full;
 }
-
-
-.prose-lg pre.language-markup {
-  @apply mt-0;
-}
-
 
 /* if you have other custom utility classes, add them here. */
 @layer utilities {
