@@ -2,7 +2,7 @@
 <h1 class="ds-h1">Consumer instructions</h1>
 
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
-  <p>There are multiple ways to use these icons in your codebase. The <a href="#use-other" class="ds-a">package itself can be consumed</a> for direct import, or it can be installed as an <a href="#ember-flight-icons" class="ds-a">Ember addon</a> for the convenience of using a component with strong defaults.</p>
+  <p>There are multiple ways to use these icons in your codebase. The <a href="#use-other" class="ds-a">package itself can be consumed</a> for direct import, or it can be installed as an <a href="#ember-flight-icons" class="ds-a">Ember package</a> for the convenience of using a component with strong defaults.</p>
 </div>
 
 <div class="ds-info">
@@ -21,7 +21,7 @@
 </div>
 
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
-  <h3 class="ds-h3">Examples of Correct use</h3>
+  <h3 class="ds-h3">Examples of correct use</h3>
   <CodeBlock @language="markup" @code="&lt;button aria-label=&quot;Check Activity&quot;>
  &lt;FlightIcon @name=&quot;activity&quot; />
 &lt;/button>" />
@@ -29,13 +29,13 @@
 </div>
 
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
-  <h2 class="ds-h2" id="ember-flight-icons"><a href="#ember-flight-icons" class="ds-a" rel="external">&sect;</a> Use in Ember Apps</h2>
+  <h2 class="ds-h2" id="ember-flight-icons"><a href="#ember-flight-icons" class="ds-a" rel="external">&sect;</a> Use in Ember apps</h2>
   <h3 class="ds-h3">Installation</h3>
   <p>To install, run
   <CodeBlock @code="yarn add @hashicorp/ember-flight-icons" @language="bash" />
   </p>
   <p>Note: <kbd class="ds-kbd">ember-test-selectors</kbd> is a dependency added for the author's convenience.
-  <a href="https://github.com/simplabs/ember-test-selectors" class="ds-a">This Ember Addon</a> strips out all <kbd class="ds-kbd">data-test-*</kbd> attributes for production builds.</p>
+  <a href="https://github.com/simplabs/ember-test-selectors" class="ds-a">This Ember package</a> strips out all <kbd class="ds-kbd">data-test-*</kbd> attributes for production builds.</p>
 </div>
 
 <div class="mt-8 prose prose-lg text-gray-800 pb-6">
@@ -106,11 +106,11 @@
     <CodeBlock @language="markup" @code="&lt;FlightIcon @name=&quot;zap&quot; @size=&quot;24&quot; />" />
   </p>
   <p id="example-styles">
-    <strong><a href="#example-styles" class="ds-a" rel="external">&sect;</a>CSS Classes:</strong> To append additional classes to the component, add <kbd class="ds-kbd">class</kbd> with value(s):
+    <strong><a href="#example-styles" class="ds-a" rel="external">&sect;</a>CSS classes:</strong> To append additional classes to the component, add <kbd class="ds-kbd">class</kbd> with value(s):
     <CodeBlock @language="markup" @code="&lt;FlightIcon @name=&quot;triangle-fill&quot; class=&quot;ds-rotate-90&quot; />" />
   </p>
   <p id="example-display">
-    <strong><a href="#example-display" class="ds-a" rel="external">&sect;</a>CSS Display:</strong> To change the default display of <i>inline-block</i> to <i>block</i>, set <kbd class="ds-kbd">@isInlineBlock</kbd> to false:
+    <strong><a href="#example-display" class="ds-a" rel="external">&sect;</a>CSS display:</strong> To change the default display of <i>inline-block</i> to <i>block</i>, set <kbd class="ds-kbd">@isInlineBlock</kbd> to false:
     <CodeBlock @language="markup" @code="&lt;FlightIcon @name=&quot;triangle-fill&quot; @isInlineBlock=&lbrace;&lbrace;false&rbrace;&rbrace; />" />
   </p>
 </div>
@@ -130,7 +130,7 @@
     Authors should also follow the following guidelines:
     <ul class="ds-ul">
       <li class="ds-li">The icons are sized as 16x16(px) and 24x24(px) and should not be used at different sizes without a design consult.</li>
-      <li class="ds-li">The icons do not have a unique id generated; authors should take precautions to avoid <a href="https://www.w3.org/TR/WCAG20-TECHS/F77.html" rel="external">related accessibility conformance failures</a>.</li>
+      <li class="ds-li">The icons do not have a unique id generated; authors should take precautions to avoid <a href="https://www.w3.org/TR/WCAG20-TECHS/F77.html" rel="external" class="ds-a">related accessibility conformance failures</a>.</li>
     </ul>
   </p>
 </div>
