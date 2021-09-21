@@ -6,7 +6,7 @@ module.exports = function (defaults) {
   let app = new EmberAddon(defaults, {
     // Add options here
     fingerprint: {
-      exclude: ['light-icon-sprite'],
+      exclude: ['flight-icon-sprite'],
     },
     postcssOptions: {
       compile: {
