@@ -7,7 +7,7 @@ module.exports = {
 
   contentFor(type) {
     if (type === 'body-footer') {
-      return '<div class="testinghere">hello</div>';
+      return '<div class="testingherezzz">hello</div>';
     }
   },
 };
