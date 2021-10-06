@@ -7,7 +7,7 @@ module.exports = {
 
   contentFor(type) {
     if (type === 'body-footer') {
-      return flightIconSprite;
+      return '<div class="testingherezzz">hello</div>';
     }
   },
 };
