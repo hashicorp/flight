@@ -93,7 +93,7 @@
     "ember-maybe-import-regenerator": "^1.0.0",
     "ember-page-title": "^6.2.2",
     "ember-prism": "^0.11.0",
-    "ember-qunit": "^5.1.4",
+    "ember-qunit": "^5.1.5",
     "ember-resolver": "^8.0.2",
     "ember-source": "~3.26.1",
     "ember-source-channel-url": "^3.0.0",
