@@ -259,11 +259,13 @@
     <code class="ds-code">@isInlineBlock</code>
     to false:
 
-    <br><br>Test the unescaped markup plugin, maybe curlies aren't honored by prismjs, unless escaped e.g. `&lbrace;`?:
+    <br /><br />Test the unescaped markup plugin, maybe curlies aren't honored by prismjs, unless escaped e.g.
+    `&lbrace;`?:
 
-    {{!-- template-lint-disable no-forbidden-elements --}}
+    {{! template-lint-disable no-forbidden-elements }}
     <script type="text/plain" class="language-markup">
-<FlightIcon @name="triangle-fill" @isInlineBlock={{false}} />
+      <FlightIcon @name="triangle-fill" @isInlineBlock={{false}}
+      />
     </script>
 
     {{! prettier-ignore-start }}
