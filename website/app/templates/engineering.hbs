@@ -224,14 +224,15 @@
     <code class="ds-code">@stretched</code>
     attribute:
     {{! prettier-ignore-start }}
-    {{! curlies do not display }}
+    {{! template-lint-disable no-triple-curlies }}
     <CodeBlock
       @language="markup"
-      @code='
+      @code={{{'
         <FlightIcon @name="zap" @size="24" @stretched={{true}} />
-      '
+      '}}}
     />
     {{! prettier-ignore-start }}
+    {{! template-lint-enable no-triple-curlies }}
   </p>
 
   <p id="example-styles">
