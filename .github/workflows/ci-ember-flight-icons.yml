@@ -32,7 +32,7 @@ name: CI - Ember Flight Icons
 
 defaults:
   run:
-    working-directory: ember-flight-icons
+    working-directory: @hashicorp/ember-flight-icons
 on:
   push:
     branches:

@@ -2,7 +2,7 @@ name: Sync & Build Icons
 
 defaults:
   run:
-    working-directory: flight-icons
+    working-directory: @hashicorp/flight-icons
 on:
   workflow_dispatch:
 
