@@ -1,0 +1,4 @@
+{
+  "private": true,
+  "workspaces": ["@hashicorp/flight-icons", "@hashicorp/ember-flight-icons", "website"]
+}
