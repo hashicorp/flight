@@ -1,8 +1,13 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@1.6.4/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/cli/changelog",
+    { "repo": "hashicorp/design-system" }
+  ],
   "commit": false,
-  "linked": [],
+  "linked": [
+    ["@hashicorp/ember-flight-icons", "@hashicorp/flight-icons"]
+  ],
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
