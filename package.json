@@ -1,5 +1,11 @@
 {
+  "name": "@hashicorp/design-system",
+  "private": true,
+  "version": "0.0.0",
   "dependencies": {
     "@changesets/cli": "^2.20.0"
-  }
+  },
+  "workspaces": [
+    "./packages/*"
+  ]
 }
