@@ -5,9 +5,7 @@
     { "repo": "hashicorp/design-system" }
   ],
   "commit": false,
-  "linked": [
-    ["@hashicorp/ember-flight-icons", "@hashicorp/flight-icons"]
-  ],
+  "linked": [],
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
