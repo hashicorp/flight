@@ -5,6 +5,9 @@
   "dependencies": {
     "@changesets/cli": "^2.20.0"
   },
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
   "workspaces": [
     "./packages/*"
   ]
